@@ -1,0 +1,2 @@
+public class BasicStack <E> {
+}

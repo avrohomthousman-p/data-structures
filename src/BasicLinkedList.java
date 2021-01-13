@@ -1,0 +1,2 @@
+public class BasicLinkedList <E> {
+}

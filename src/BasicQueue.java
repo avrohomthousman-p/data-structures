@@ -1,0 +1,2 @@
+public class BasicQueue <E> {
+}
