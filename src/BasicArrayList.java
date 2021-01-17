@@ -68,7 +68,7 @@ public class BasicArrayList<E> implements List<E> {
         public void remove(){
             if (calledRemove)
                 throw new IllegalStateException();
-            BasicArrayList.this.remove(--indexPointer); //need to call the remove() of MyArrayList
+            BasicArrayList.this.remove(--indexPointer);
             calledRemove = true;
         }
     }
@@ -205,7 +205,7 @@ public class BasicArrayList<E> implements List<E> {
     @Override
     public boolean retainAll(Collection<?> c) {
         nullCheck(c, "cannot use null collection to retain data from arrayList");
-        if(c.isEmpty())
+        if(this.isEmpty())
             return false;
         HashSet<E> itemsToKeep = new HashSet<>((Collection<? extends E>) c);
         E[] newStorage = (E[]) new Object[storage.length];
